@@ -1,0 +1,6 @@
+<!--component/my-int/my-int.wxml-->
+<text>开始\n</text>
+<slot name="slot1"/>
+<slot name="slot2"/>
+<slot name="slot3"/>
+<text>结束\n</text>

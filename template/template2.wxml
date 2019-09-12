@@ -1,0 +1,4 @@
+<template name="normal2">
+    <text>{{name}}</text>
+    <button>{{buttomText}}</button>
+</template>

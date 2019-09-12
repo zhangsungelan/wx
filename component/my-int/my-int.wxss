@@ -1,0 +1,7 @@
+/* component/my-int/my-int.wxss */
+.content3{
+    color:red
+}
+.content2{
+    color:yellow
+}

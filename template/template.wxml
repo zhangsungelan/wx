@@ -1,0 +1,4 @@
+<template name="normal">
+    <text>zhangsunglan</text>
+    <button>++++</button>
+</template>
