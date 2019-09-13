@@ -1,13 +1,6 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<navigator url="/pages/detail/detail?name=zhangsun">跳转detail页面,传递参数</navigator>
+<navigator url="/pages/detail/detail" open-type="redirect">跳转detail页面,无返回按钮，不允许跳转到tabbar页面</navigator>
+<navigator url="/pages/detail/detail" open-type="switchTab">跳转detail页面，同时切换下面的导航</navigator>
+<text>{{message}}</text>
+<button bindtap="jump">跳转</button>

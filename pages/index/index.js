@@ -7,7 +7,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    message:"哈哈哈"
   },
   //事件处理函数
   bindViewTap: function() {
@@ -50,5 +51,16 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
+  },
+  jump:function(){
+      wx.navigateTo({
+          url: '',
+      }),
+      wx.redirectTo({
+          url: '',
+      }),
+      wx.switchTab({
+          url: '',
+      })
   }
 })
